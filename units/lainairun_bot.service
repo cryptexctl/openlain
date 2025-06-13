@@ -1,0 +1,14 @@
+[Unit]
+Description=Lain AI Run Bot Service
+After=network.target
+
+[Service]
+Type=simple
+User=lain
+WorkingDirectory=/opt/lainairun_bot
+ExecStart=/usr/bin/python3 main.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target 

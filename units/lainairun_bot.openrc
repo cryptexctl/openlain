@@ -1,0 +1,20 @@
+#!/sbin/openrc-run
+
+description="Lain AI Run Bot Service"
+
+depend() {
+    need net
+    after logger
+}
+
+start() {
+    ebegin "Starting lainairun_bot"
+    start-stop-daemon --start --user lain --chdir /opt/lainairun_bot --exec /usr/bin/python3 -- main.py
+    eend $?
+}
+
+stop() {
+    ebegin "Stopping lainairun_bot"
+    start-stop-daemon --stop --user lain --exec /usr/bin/python3
+    eend $?
+} 

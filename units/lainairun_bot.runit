@@ -1,0 +1,5 @@
+#!/bin/sh
+
+exec 2>&1
+cd /opt/lainairun_bot
+exec chpst -u lain /usr/bin/python3 main.py 
