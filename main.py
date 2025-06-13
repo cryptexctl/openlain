@@ -108,7 +108,7 @@ async def generate_response(prompt: str) -> str:
         }
         
         data = {
-            "model": "openai/gpt-4.1",
+            "model": "openai/gpt-4o-mini",
             "messages": [
                 {"role": "system", "content": don_prompt},
                 {"role": "user", "content": prompt}
