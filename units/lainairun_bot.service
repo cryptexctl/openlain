@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 Type=simple
-User=lain
+User=root
 WorkingDirectory=/opt/lainairun_bot
 ExecStart=/usr/bin/python3 main.py
 Restart=always
