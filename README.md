@@ -25,7 +25,7 @@ pip install -r requirements.txt
 
 4. Создайте файл `.env` на основе `env.example`:
 ```bash
-cp .env.example .env
+cp env.example .env
 ```
 
 5. Заполните `.env` файл своими данными:
